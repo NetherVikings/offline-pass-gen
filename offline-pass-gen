@@ -1,0 +1,10 @@
+import random
+
+characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-=+!@#$%^&*"
+password = ""
+password_length = 16
+
+for index in range(password_length):
+    password = password + random.choice(characters)
+
+print("Password Created: {}".format(password))
